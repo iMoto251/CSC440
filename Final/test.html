@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>My first HTML5 page</title>
+      <meta name="description" content="My HTML5 page">
+      <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+  <body>
+      <div id="root">
+          <form class="form">
+              <label class="label">Username:</label>
+              <input class="input" type = "text" id="username" name="username" onchange="validateUsername()">
+              <label class="label">Password:</label>
+              <input class="input" type = "password" id="password" name="password" onchange="validatePassword()">
+              <button class="button" onclick="Submit()">Submit</button>
+          </form>
+      </div>
+      <script src="js/scripts.js"></script>
+  </body>
+</html> 

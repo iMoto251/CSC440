@@ -1,0 +1,59 @@
+body {background-color: gray;}
+h1 {color: goldenrod;}
+p {color: goldenrod;}
+h2 {color: black;}
+label {color: black;}
+figcaption {color: goldenrod;}
+
+
+body {
+    background: gray;
+    padding: 20px;
+  }
+  
+  article {
+    background: white;
+    width: 30%;
+    padding: 20px;
+    position: relative;
+  }
+  article::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 20px;
+    width: 100%;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/rip.svg) bottom center;
+    background-size: 200%;
+  }
+
+  header {
+    background: white;
+    width: 30%;
+    padding: 20px;
+    position: relative;
+  }
+  header::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 20px;
+    width: 100%;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/rip.svg) bottom center;
+    background-size: 200%;
+  }
+
+  h3::before{
+      content: url(https://assets.website-files.com/5dd2a4151e22cb6139b47260/5dd2bba41e22cbfbc6b55663_arrow%20-%20green.svg)
+  }
+
+  ::selection{
+      color: goldenrod;
+      background: black;
+  }
+
+  a:hover{
+      background-color: goldenrod;
+  }

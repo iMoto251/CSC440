@@ -1,0 +1,31 @@
+*{margin: 0;padding:0;}
+
+.grid{
+    display:grid;
+    grid-template-columns: 15% 1fr 20%;
+    grid-template-areas:
+    "title cont links";
+    height:100vh;
+}
+
+section{width:100%; height:950px; float:left;}
+
+.title{
+    grid-area: title;
+}
+
+.cont{
+    grid-area: cont;
+}
+
+.links{
+    grid-area: links;
+}
+
+.grid div:nth-child(even){
+    background-color: red;
+}
+
+.grid div:nth-child(odd){
+    background-color: green;
+}
